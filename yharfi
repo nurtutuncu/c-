@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    char h;
+    int satir = 30;
+
+    printf("Bir harf girin: ");
+    scanf(" %c", &h);
+
+   
+    for (int i = 0; i < satir; i++) {
+        for (int j = 0; j < i; j++) {
+            printf(" ");
+        }
+        printf("%c\n", h);
+    }
+
+  
+    for (int i = satir - 2; i >= 0; i--) {   
+        for (int j = 0; j < i; j++) {
+            printf(" ");
+        }
+        printf("%c\n", h);
+    }
+
+    return 0;
+}
